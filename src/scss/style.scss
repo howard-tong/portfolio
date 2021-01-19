@@ -1,0 +1,9 @@
+@import "./variables";
+@import "./navbar";
+@import "./intro";
+@import "./experience";
+
+body {
+  margin: 0;
+  background-color: $background-color;
+}

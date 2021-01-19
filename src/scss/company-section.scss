@@ -1,0 +1,48 @@
+#company-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  i {
+    font-size: 60px;
+    transform: rotateY(180deg);
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    >li {
+      margin-top: 5px;
+    }
+  }
+
+  .company-description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .company-title {
+    border-left: 2px solid $primary-color;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .company-industry {
+    border-left: 2px solid $primary-color;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+
+}

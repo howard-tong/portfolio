@@ -1,0 +1,33 @@
+#experience {
+  padding: 200px;
+}
+
+.tech-padding {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.tech-item {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  min-width: 25px;
+  background-color: $secondary-color;
+}
