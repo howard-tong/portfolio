@@ -1,0 +1,29 @@
+#tab-list {
+  margin-right: 2em;
+  min-width: 130px;
+  border-right: 1px solid darkseagreen;
+
+  .active-tab {
+    border-right: 3px solid $secondary-color;
+  }
+
+  .divider-text {
+    font-family: $montserrat;
+    color: darkseagreen;
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  .link-list-item {
+    background: transparent;
+    
+    &:hover {
+      background: slategray;
+    }
+  }
+
+  .link-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}

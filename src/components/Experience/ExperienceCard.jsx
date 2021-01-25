@@ -2,42 +2,46 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ExperienceCard = ({
-  iconName,
+  activeTab,
+  tabKey,
+  title,
+  subtitle,
+  icon,
   iconColor,
-  jobTitle,
-  industry,
-  jobDescription,
+  description,
   technologies,
-}) => (
-  <div id="company-section" className="card">
-    <div className="company-description">
-      <FontAwesomeIcon icon={iconName} color={iconColor} />
-      <div className="company-right-section">
-        <div className="company-title">
+}) => {
+  console.log(activeTab, tabKey);
+  return (
+  <div id="experience-card" className={`card ${activeTab === tabKey ? '' : 'd-none'}`}>
+    <div className="description">
+      <FontAwesomeIcon icon={icon} color={iconColor} size="4x" className="mr-3" />
+      <div className="top-section">
+        <div className="title">
           <span>
-            { jobTitle }
+            { title }
           </span>
         </div>
-        <div className="company-industry">
+        <div className="subtitle">
           <span>
-            { industry }
+            { subtitle }
           </span>
         </div>
       </div>
     </div>
-    <div className="company-job-description">
+    <div className="details">
       <ul>
         {
-          jobDescription.map((description, index) => (
+          description.map((bullet, index) => (
             <li key={index.toString()}>
-              { description }
+              { bullet }
             </li>
           ))
         }
       </ul>
     </div>
     <div className="technologies">
-      <span className="gray-text">Technologies</span>
+      <span className="text-muted">Technologies</span>
       <div className="tech-list">
         {
           technologies && technologies.map((tech, index) => (
@@ -50,5 +54,6 @@ const ExperienceCard = ({
     </div>
   </div>
 );
+      };
 
 export default ExperienceCard;

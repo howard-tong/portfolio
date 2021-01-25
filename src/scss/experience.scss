@@ -1,33 +1,32 @@
 #experience {
-  padding: 200px;
-}
+  padding: 3.75em;
+  
+  .header {
+    font-family: $montserrat;
+    color: $secondary-color;
+    text-align: center;
+    margin-bottom: 0.75em;
 
-.tech-padding {
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
+    &:before {
+      content:"";
+      display: inline-block;
+      vertical-align: bottom;
+      height: 0.5em;
+      width: 30%;
+      margin-right: 5px;
+      border-top: 1px solid gray;
+    }
+    
+    &:after {
+      content:"";
+      display: inline-block;
+      vertical-align: bottom;
+      height: 0.5em;
+      width: 30%;
+      margin-left: 5px;
+      border-top: 1px solid gray;
+    }
+    
+  }
 
-.technologies {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  align-items: flex-start;
-}
-
-.tech-list {
-  display: flex;
-  flex-direction: row;
-}
-
-.tech-item {
-  display: flex;
-  color: white;
-  font-size: 14px;
-  justify-content: center;
-  flex-direction: row;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 20px;
-  min-width: 25px;
-  background-color: $secondary-color;
 }
