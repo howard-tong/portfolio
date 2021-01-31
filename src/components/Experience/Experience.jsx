@@ -7,8 +7,10 @@ import ExperienceCard from './ExperienceCard';
 const experienceEntries = [
   {
     key: 'stanford',
+    company: "Stanford University (ClinGen)",
     title: "Front-End Software Engineer",
     subtitle: "Gene Classification, Variant Interpretation",
+    date: "May 2019 - Current",
     icon: faDna,
     iconColor: "red",
     description: [
@@ -21,8 +23,10 @@ const experienceEntries = [
   },
   {
     key:'truckxi',
+    company: "JaiMeg, Inc. (DBA Truckxi)",
     title: "Front-End Software Engineer",
     subtitle: "SaaS, E-Commerce, E-Logistics",
+    date: "Oct 2017 - April 2019",
     icon: faTruck,
     iconColor: "skyblue",
     description: [
@@ -35,8 +39,10 @@ const experienceEntries = [
   },
   {
     key: 'smart-mirror',
+    company: "UC Davis",
     title: "Experienceless Student",
     subtitle: "Passion Project",
+    date: "June - September 2015",
     icon: faLightbulb,
     iconColor: "yellow",
     description: [
@@ -54,7 +60,7 @@ const Experience = () => {
 
   console.log(activeTab);
   return (
-    <div id="experience" className="container">
+    <div id="section" className="container">
       <h1 className="header">My Experience</h1>
       <div className="d-flex justify-space-between px-5">
         <TabList activeTab={activeTab} setActiveTab={setActiveTab} />
@@ -63,6 +69,8 @@ const Experience = () => {
             key={entry.key}
             activeTab={activeTab}
             tabKey={entry.key}
+            company={entry.company}
+            date={entry.date}
             title={entry.title}
             subtitle={entry.subtitle}
             icon={entry.icon}

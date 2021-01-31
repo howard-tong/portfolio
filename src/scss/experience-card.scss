@@ -2,6 +2,7 @@
   padding: 1em;
   box-shadow: -4px 8px 10px 5px rgba(0, 0, 0, 0.5);
   font-family: $verdana;
+  color: $background-color;
 
   -webkit-animation: slideIn 0.5s forwards;
   -moz-animation: slideIn 0.5s forwards;
@@ -13,7 +14,12 @@
     text-align: left;
 
     >li {
-      margin-top: 5px;
+      margin-top: 2px;
+    }
+
+    li::marker {
+      color: darkseagreen;
+      font-size: 1.25em;
     }
   }
 
@@ -27,6 +33,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .company {
+    color: darkseagreen;
   }
 
   .title {
@@ -43,7 +53,7 @@
 
   .details {
     margin-top: 1em;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .tech-padding {

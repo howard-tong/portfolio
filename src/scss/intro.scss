@@ -1,5 +1,9 @@
 #intro {
-  padding-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10em;
 
   .photo {
     width: 250px;

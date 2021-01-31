@@ -4,32 +4,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const ExperienceCard = ({
   activeTab,
   tabKey,
+  company,
   title,
   subtitle,
+  date,
   icon,
   iconColor,
   description,
   technologies,
 }) => {
-  console.log(activeTab, tabKey);
   return (
   <div id="experience-card" className={`card ${activeTab === tabKey ? '' : 'd-none'}`}>
     <div className="description">
       <FontAwesomeIcon icon={icon} color={iconColor} size="4x" className="mr-3" />
       <div className="top-section">
-        <div className="title">
-          <span>
-            { title }
-          </span>
-        </div>
-        <div className="subtitle">
-          <span>
-            { subtitle }
-          </span>
-        </div>
+        <h5 className="title">
+          { title }
+          {company && <span className="company">{ ` @ ${company}`}</span>}
+        </h5>
+        <h6 className="subtitle">
+          { subtitle }
+        </h6>
       </div>
     </div>
     <div className="details">
+      <div className="text-muted">{ date }</div>
       <ul>
         {
           description.map((bullet, index) => (

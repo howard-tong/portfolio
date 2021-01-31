@@ -1,6 +1,7 @@
-#experience {
+#section {
   padding: 3.75em;
-  
+  min-height: 100vh;
+
   .header {
     font-family: $montserrat;
     color: $secondary-color;
@@ -8,25 +9,24 @@
     margin-bottom: 0.75em;
 
     &:before {
-      content:"";
+      content: "";
       display: inline-block;
       vertical-align: bottom;
       height: 0.5em;
       width: 30%;
       margin-right: 5px;
-      border-top: 1px solid gray;
+      border-top: 1px solid darkseagreen;
     }
-    
+
     &:after {
-      content:"";
+      content: "";
       display: inline-block;
       vertical-align: bottom;
       height: 0.5em;
       width: 30%;
       margin-left: 5px;
-      border-top: 1px solid gray;
+      border-top: 1px solid darkseagreen;
     }
-    
-  }
 
+  }
 }
