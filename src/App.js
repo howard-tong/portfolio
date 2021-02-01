@@ -3,6 +3,7 @@ import {
   Navbar,
   Intro,
   About,
+  Margins,
 } from './components';
 import { Experience } from './components/Experience';
 import './scss/style.scss';
@@ -14,6 +15,7 @@ const App = () => {
       <Intro />
       <About />
       <Experience />
+      <Margins />
     </div>
   );
 }

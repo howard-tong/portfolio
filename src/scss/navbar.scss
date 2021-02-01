@@ -1,7 +1,46 @@
 #navbar {
+  // background-color: #152238;
   background-color: $background-color;
+  // box-shadow: 2px -2px 10px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 
   button {
     font-family: $montserrat;
+  }
+
+  .logo {
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .logo-image {
+    position: absolute;
+    border-radius: 12.5px;
+    height: 25px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+
+  .diamond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg) skew(0, 0);
+    animation: roll 2s ease;
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: translateX(30em) rotate(45deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(-315deg);
   }
 }

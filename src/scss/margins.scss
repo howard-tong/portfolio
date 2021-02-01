@@ -1,0 +1,41 @@
+#margins {
+  position: fixed;
+  left: 5em;
+  right: 5em;
+  bottom: 0;
+  animation: emerge 1s ease;
+
+  .margin-decorations {
+    height: 5em;
+    border-right: 0.3px solid darkseagreen;
+    border-left: 0.3px solid darkseagreen;
+  }
+  
+  .margin-email {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    transform-origin: left;
+  }
+
+  .margin-social-media {
+    transform: translateX(10px) translateY(-9px);
+    margin-bottom: 0;
+
+
+    >li {
+      list-style: none;
+      margin-top: 1em;
+    }
+  }
+}
+
+@keyframes emerge {
+  from {
+    transform: translateY(30em);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

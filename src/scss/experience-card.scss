@@ -4,9 +4,9 @@
   font-family: $verdana;
   color: $background-color;
 
-  -webkit-animation: slideIn 0.5s forwards;
-  -moz-animation: slideIn 0.5s forwards;
-  animation: slideIn 0.5s forwards;
+  -webkit-animation: fadeIn 0.5s forwards;
+  -moz-animation: fadeIn 0.5s forwards;
+  animation: fadeIn 0.5s forwards;
 
   ul {
     display: flex;
@@ -87,7 +87,7 @@
     font-size: 0.8em;
   }
 
-  @-webkit-keyframes slideIn {
+  @-webkit-keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -97,7 +97,7 @@
     }
   }
 
-  @-moz-keyframes slideIn {
+  @-moz-keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -107,7 +107,7 @@
     }
   }
 
-  @keyframes slideIn {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -116,6 +116,4 @@
       opacity: 1;
     }
   }
-
-
 }
