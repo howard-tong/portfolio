@@ -37,10 +37,10 @@
 
 @keyframes roll {
   from {
-    transform: translateX(30em) rotate(45deg);
+    transform: translateX(-10em) rotate(-45deg);
   }
 
   to {
-    transform: translateX(0) rotate(-315deg);
+    transform: translateX(0) rotate(405deg);
   }
 }
