@@ -47,17 +47,18 @@ html:not([data-scroll='0']) {
     top: 0;
     width: 100%;
     box-shadow: 2px -2px 10px 8px rgba(0, 0, 0, 0.2);
-    height: 3em;
+    opacity: 0.9;
+    // height: 3em;
 
-    button {
-      font-size: 0.8em;
-      transition: font-size 0.5s ease;
-    }
+    // button {
+    //   font-size: 0.8em;
+    //   transition: font-size 0.5s ease;
+    // }
 
-    .logo {
-      transform: scale(0.7);
-      transition: transform 0.5s ease;
-    }
+    // .logo {
+    //   transform: scale(0.7);
+    //   transition: transform 0.5s ease;
+    // }
   }
 }
 
