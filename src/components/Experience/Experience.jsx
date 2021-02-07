@@ -55,12 +55,11 @@ const experienceEntries = [
   }
 ];
 
-const Experience = () => {
+const Experience = ({ scrollRef }) => {
   const [activeTab, setActiveTab] = useState('stanford');
 
-  console.log(activeTab);
   return (
-    <div id="section" className="container">
+    <div id="section" className="container" ref={scrollRef}>
       <h1 className="header">My Experience</h1>
       <div className="d-flex justify-space-between px-5">
         <TabList activeTab={activeTab} setActiveTab={setActiveTab} />
